@@ -1,3 +1,14 @@
+/* Adding fonts from fonts folder */
+
+@font-face {
+  font-family: "Hagrid";
+  src: url("../fonts/Hagrid-Text-Extrabold-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* This is a test */
 h1 {
   color: red;
+  font-family: "Hagrid", sans-serif;
 }
