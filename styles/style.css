@@ -22,6 +22,11 @@ section {
   margin-top: 3rem;
 }
 
+.active {
+  font-weight: 700;
+  color: #fa3419;
+}
+
 /* CSS DES TITERS */
 h1 {
   color: #fa3419;
@@ -30,9 +35,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.large {
+  font-size: 2em;
   text-align: center;
 }
 
@@ -121,25 +134,28 @@ a.btn {
   width: 140px;
 }
 
+.btn-large {
+  width: 220px;
+}
+
 .btn.cta {
   background-color: #fa3419;
   color: #fafbf8;
 }
 
 .btn.btn-secondaire {
-  background: none;
-  color: #fafbf8;
+  background: #fafbf8;
+  color: #1a0d07;
   border: 2px solid #fa3419;
 }
 
 .cta:hover {
   background-color: #e82c13;
-  color: #fafbf8;
+
   transform: scale(1.05);
 }
 
 .btn-secondaire:hover {
-  color: #fafbf8;
   transform: scale(1.05);
 }
 

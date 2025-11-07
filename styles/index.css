@@ -2,7 +2,10 @@
 .hero-section {
   background-color: #383535;
   color: #fafbf8;
-
+  background-image: url("../images/homepage/heroV2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-top: -96px;
 }
 
@@ -30,6 +33,52 @@
 .container-btn {
   display: flex;
   gap: 18px;
+}
+
+/* COACHS */
+.coachs {
+  background-color: #383535;
+  color: #1a0d07;
+  padding: 24px 50px;
+  text-align: center;
+}
+
+.coachs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.coach-card {
+  background-color: #fafbf8;
+  border-radius: 20px;
+  padding: 4px;
+  width: 250px;
+  text-decoration: none;
+  color: #1a0d07;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.coach-card img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.coach-card h3 {
+  margin-bottom: 10px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.coach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* IMAGES BENTO */
@@ -69,6 +118,37 @@
   height: 100%;
   object-fit: cover;
   border-radius: 16px;
+}
+
+/* PROGRAMMES */
+.programmes {
+  background-color: #383535;
+  color: #1a0d07;
+  padding: 24px 50px;
+  text-align: center;
+  margin-top: 0 !important;
+}
+
+.programmes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.programme-card {
+  background-color: #fafbf8;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  text-decoration: none;
+  color: #1a0d07;
+
+  transition: transform 0.3s;
+}
+
+.programme-card:hover {
+  transform: translateY(-5px);
 }
 
 /* AVIS SECTION */
@@ -130,6 +210,71 @@
 .review-meta {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* NOS CLUBS */
+.notre-club {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 60px;
+  background-color: #fafbf8;
+  gap: 40px;
+}
+
+.notre-club-text h2 {
+  font-family: "hagrid", sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px #fa3419;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.notre-club-images {
+  display: flex;
+  gap: 30px;
+}
+
+.club-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  width: 320px;
+  height: 420px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.club-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 25px;
+}
+
+.club-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fafbf8;
+}
+
+.club-overlay h3 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.club-image:hover img {
+  transform: scale(1.05);
+}
+
+.club-image:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* RESPONSIVE */
