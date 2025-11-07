@@ -11,6 +11,11 @@ body {
   font-family: "Mona Sans", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #fafbf8;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* CSS DES TITERS */
@@ -21,10 +26,20 @@ h1 {
 }
 
 h2 {
-  color: #fafbf8;
   font-size: 1.2em;
   line-height: 1.6;
   font-weight: 400;
+}
+
+.white {
+  color: #fafbf8;
+}
+
+.black {
+  color: #1a0d07;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
 }
 
 /* CSS DE LA BARRE DE NAVIGUATION */
@@ -117,4 +132,111 @@ a.btn {
 .btn-secondaire:hover {
   color: #fafbf8;
   transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #383535;
+  color: #fafbf8;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 5%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  height: 120px;
+  border-radius: 16px;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.footer-links li a {
+  color: #fafbf8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #fa3419;
+}
+
+.footer-legal-bottom {
+  text-align: center;
+  padding: 15px 5%;
+  font-size: 0.75rem;
+  border-top: 1px solid rgba(250, 52, 25, 0.3);
+  margin-top: 20px;
+}
+
+.footer-legal-bottom ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-legal-bottom a {
+  color: #fafbf8;
+  text-decoration: none;
+}
+
+.footer-legal-bottom a:hover {
+  color: #fa3419;
+}
+
+/* icons social media footer */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.footer-social a:hover .social-icon {
+  transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-nav,
+  .footer-nav ul {
+    flex-direction: column;
+  }
 }
