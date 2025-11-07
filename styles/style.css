@@ -1,5 +1,4 @@
-/* Adding fonts from fonts folder */
-
+/* FONTS */
 @font-face {
   font-family: "Hagrid";
   src: url("../fonts/Hagrid-Text-Extrabold-trial.ttf") format("truetype");
@@ -7,8 +6,115 @@
   font-style: normal;
 }
 
-/* This is a test */
+/* CSS GENERAL ET INITIALISATION */
+body {
+  font-family: "Mona Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS DES TITERS */
 h1 {
-  color: red;
+  color: #fa3419;
   font-family: "Hagrid", sans-serif;
+  font-size: 3em;
+}
+
+h2 {
+  color: #fafbf8;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* CSS DE LA BARRE DE NAVIGUATION */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-top: 12px;
+  padding: 0 12px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 32px 8px 16px;
+  background-color: #1a0d077c;
+  border-radius: 48px;
+}
+
+nav img {
+  height: 62px;
+  border-radius: 50%;
+}
+
+/* centré le logo dans son container verticalement */
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+ul,
+li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #fafbf8;
+}
+
+ul,
+li a:hover {
+  color: #fa3419;
+}
+
+/* CSS DES BOUTONS CTA ET SECONDAIRE */
+
+/* on met inline block pour que le "bouton" accepte le padding */
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 1em;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 140px;
+}
+
+.btn.cta {
+  background-color: #fa3419;
+  color: #fafbf8;
+}
+
+.btn.btn-secondaire {
+  background: none;
+  color: #fafbf8;
+  border: 2px solid #fa3419;
+}
+
+.cta:hover {
+  background-color: #e82c13;
+  color: #fafbf8;
+  transform: scale(1.05);
+}
+
+.btn-secondaire:hover {
+  color: #fafbf8;
+  transform: scale(1.05);
 }
