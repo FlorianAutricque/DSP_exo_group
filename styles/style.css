@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  margin-top: 3rem;
+}
+
 /* CSS DES TITERS */
 h1 {
   color: #fa3419;
@@ -29,6 +33,11 @@ h2 {
   font-size: 1.2em;
   line-height: 1.6;
   font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
 }
 
 .white {

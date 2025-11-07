@@ -1,0 +1,228 @@
+/*PARTIE 1 : BANNIERE */
+.banniere {
+  position: relative;
+  background-image: url("../images/tarifs/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fafbf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  gap: 50px;
+  margin-top: -96px;
+}
+
+.banniere::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.creation {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+/* Bouton CTA Bannière */
+.cta-bouton {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #fafbf8;
+  color: #fa3419;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: "Hagrid", sans-serif;
+}
+
+.cta-bouton:hover {
+  background-color: #383535;
+  transform: scale(1.05);
+}
+
+/* PARTIE 2 ET 3 : OFFRES AVEC ET SANS ENGAGEMENT */
+/* Conteneur des colonnes */
+.colonne-bloc {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+/* Chaque colonne */
+.conteneur-bloc {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.conteneur {
+  width: 300px;
+  padding: 20px;
+  background-color: #383535;
+  border-radius: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fafbf8;
+}
+
+/* Bloc interne */
+.box {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.box p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Liste des offres */
+.offre-list {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #fafbf8;
+
+  display: block;
+  text-align: left;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* TITRES */
+
+h3 {
+  text-align: center;
+  color: #fafbf8;
+  margin-bottom: 15px;
+  font-family: "Hagrid", sans-serif;
+  margin-bottom: 2.5rem;
+}
+
+mark {
+  background-color: #fa3419;
+  color: #383535;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+/* PARTIE 4 : AVANTAGES */
+.icone-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.icone-bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 320px;
+}
+
+.icone {
+  width: 100px;
+  height: 100px;
+  filter: invert(38%) sepia(92%) saturate(4747%) hue-rotate(342deg)
+    brightness(97%) contrast(100%);
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #383535;
+}
+
+/* PARTIE 5 : LES + CHEZ POWER FIT */
+
+.tableau {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tableau td {
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.ligne1 {
+  background-color: #383535;
+}
+
+.ligne2 {
+  background-color: #fa3419;
+}
+
+.ligne3 {
+  background-color: #383535;
+}
+
+.ligne4 {
+  background-color: #fa3419;
+}
+
+/* PARTIE 6 : INSCRIPTION */
+
+.bannierebas {
+  position: relative;
+  background-image: url("../images/tarifs/inscription.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fafbf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  gap: 50px;
+}
+
+.inscription {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .bannierebas {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .colonne-bloc {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .icone-section {
+    gap: 50px;
+  }
+
+  .tableau {
+    width: 300px;
+  }
+}
