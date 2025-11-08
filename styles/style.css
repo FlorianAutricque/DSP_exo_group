@@ -6,12 +6,19 @@
   font-style: normal;
 }
 
+:root {
+  --orange: #fa3419;
+  --noir: #1a0d07;
+  --blanc: #fafbf8;
+  --gris: #383535;
+}
+
 /* CSS GENERAL ET INITIALISATION */
 body {
   font-family: "Mona Sans", sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #fafbf8;
+  background-color: var(--blanc);
 }
 
 html {
@@ -20,18 +27,20 @@ html {
 
 section {
   margin-top: 3rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .active {
   font-weight: 700;
-  color: #fa3419;
+  color: var(--orange);
 }
 
-/* CSS DES TITERS */
+/* CSS DES TITRES */
 h1 {
-  color: #fa3419;
+  color: var(--orange);
   font-family: "Hagrid", sans-serif;
-  font-size: 3em;
+  font-size: clamp(2em, 5vw, 3em);
 }
 
 h2 {
@@ -54,17 +63,17 @@ p {
 }
 
 .white {
-  color: #fafbf8;
+  color: var(--blanc);
 }
 
 .black {
-  color: #1a0d07;
+  color: var(--noir);
   text-align: center;
   font-weight: 600;
   font-size: 2em;
 }
 
-/* CSS DE LA BARRE DE NAVIGUATION */
+/* CSS DE LA BARRE DE NAVIGATION */
 header {
   position: sticky;
   top: 0;
@@ -81,7 +90,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 8px 32px 8px 16px;
-  background-color: #1a0d077c;
+  background-color: rgba(26, 13, 7, 0.49);
   border-radius: 48px;
 }
 
@@ -107,12 +116,73 @@ ul,
 li a {
   text-decoration: none;
   list-style-type: none;
-  color: #fafbf8;
+  color: var(--blanc);
 }
 
 ul,
 li a:hover {
-  color: #fa3419;
+  color: var(--orange);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: var(--blanc);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/*MODE MOBILE */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    z-index: 200;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(26, 13, 7, 0.95);
+    flex-direction: column;
+
+    align-items: center;
+    gap: 2rem;
+    transition: right 0.4s ease-in-out;
+    border-radius: 24px 0 0 24px;
+
+    padding-top: 6rem;
+  }
+
+  .nav-links.nav-active {
+    right: 0;
+  }
+
+  .burger.toggle span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .burger.toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.toggle span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  ul {
+    flex-direction: column;
+  }
 }
 
 /* CSS DES BOUTONS CTA ET SECONDAIRE */
@@ -139,19 +209,18 @@ a.btn {
 }
 
 .btn.cta {
-  background-color: #fa3419;
-  color: #fafbf8;
+  background-color: var(--orange);
+  color: var(--blanc);
 }
 
 .btn.btn-secondaire {
-  background: #fafbf8;
-  color: #1a0d07;
-  border: 2px solid #fa3419;
+  background: var(--blanc);
+  color: var(--noir);
+  border: 2px solid var(--orange);
 }
 
 .cta:hover {
   background-color: #e82c13;
-
   transform: scale(1.05);
 }
 
@@ -161,8 +230,8 @@ a.btn {
 
 /* FOOTER */
 .footer {
-  background-color: #383535;
-  color: #fafbf8;
+  background-color: var(--gris);
+  color: var(--blanc);
 }
 
 .footer-container {
@@ -196,13 +265,13 @@ a.btn {
 }
 
 .footer-links li a {
-  color: #fafbf8;
+  color: var(--blanc);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links li a:hover {
-  color: #fa3419;
+  color: var(--orange);
 }
 
 .footer-legal-bottom {
@@ -223,12 +292,12 @@ a.btn {
 }
 
 .footer-legal-bottom a {
-  color: #fafbf8;
+  color: var(--blanc);
   text-decoration: none;
 }
 
 .footer-legal-bottom a:hover {
-  color: #fa3419;
+  color: var(--orange);
 }
 
 /* icons social media footer */

@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fafbf8;
+  color: var(--blanc);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +13,8 @@
   padding: 80px 20px;
   gap: 50px;
   margin-top: -96px;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .banniere::before {
@@ -20,6 +22,8 @@
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .creation {
@@ -33,8 +37,8 @@
   display: inline-block;
   padding: 15px 30px;
   font-size: 1.2em;
-  background-color: #fafbf8;
-  color: #fa3419;
+  background-color: var(--blanc);
+  color: var(--orange);
   text-decoration: none;
   border-radius: 50px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -42,7 +46,7 @@
 }
 
 .cta-bouton:hover {
-  background-color: #383535;
+  background-color: var(--gris);
   transform: scale(1.05);
 }
 
@@ -67,10 +71,10 @@
 .conteneur {
   width: 300px;
   padding: 20px;
-  background-color: #383535;
+  background-color: var(--gris);
   border-radius: 24px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #fafbf8;
+  color: var(--blanc);
 }
 
 /* Bloc interne */
@@ -89,8 +93,7 @@
   padding-left: 20px;
   list-style-type: disc;
   list-style-position: inside;
-  color: #fafbf8;
-
+  color: var(--blanc);
   display: block;
   text-align: left;
 }
@@ -104,15 +107,15 @@
 
 h3 {
   text-align: center;
-  color: #fafbf8;
+  color: var(--blanc);
   margin-bottom: 15px;
   font-family: "Hagrid", sans-serif;
   margin-bottom: 2.5rem;
 }
 
 mark {
-  background-color: #fa3419;
-  color: #383535;
+  background-color: var(--orange);
+  color: var(--gris);
   padding: 8px 20px;
   border-radius: 10px;
 }
@@ -145,7 +148,7 @@ mark {
 .description {
   margin-top: 10px;
   font-size: 20px;
-  color: #383535;
+  color: var(--gris);
 }
 
 /* PARTIE 5 : LES + CHEZ POWER FIT */
@@ -163,24 +166,24 @@ mark {
 
 .tableau td {
   padding: 30px;
-  color: white;
+  color: var(--blanc);
   font-weight: bold;
 }
 
 .ligne1 {
-  background-color: #383535;
+  background-color: var(--gris);
 }
 
 .ligne2 {
-  background-color: #fa3419;
+  background-color: var(--orange);
 }
 
 .ligne3 {
-  background-color: #383535;
+  background-color: var(--gris);
 }
 
 .ligne4 {
-  background-color: #fa3419;
+  background-color: var(--orange);
 }
 
 /* PARTIE 6 : INSCRIPTION */
@@ -191,7 +194,7 @@ mark {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fafbf8;
+  color: var(--blanc);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,6 +214,10 @@ mark {
   .bannierebas {
     flex-direction: column;
     padding: 60px 20px;
+  }
+
+  .banniere {
+    gap: 0;
   }
 
   .colonne-bloc {

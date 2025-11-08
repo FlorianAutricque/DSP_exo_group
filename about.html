@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/about.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,5 +15,404 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>Power Fit - A propos</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo Power Fit" />
+        </a>
+
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="team.html">Coachs</a></li>
+          <li><a href="activities.html">Programmes</a></li>
+          <li><a href="about.html" class="active">À propos</a></li>
+          <li><a href="membership.html">Abonnements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BANNIÈRE MOTIVANTE -->
+    <section class="about-banner">
+      <div class="banner-content">
+        <h1>
+          Transforme ton corps. <br />
+          Révèle ta puissance.
+        </h1>
+        <h2>
+          Chez <strong>PowerFit</strong>, chaque goutte de sueur te rapproche de
+          la meilleure version de toi-même.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Nos valeurs -->
+    <section class="about-values">
+      <h2 class="black large">Nos valeurs</h2>
+      <div class="values-container">
+        <div class="value-card">
+          <img
+            src="images/icon equipe.png"
+            alt="Icône esprit d'équipe"
+            class="value-icon"
+          />
+          <h3>Esprit d’équipe</h3>
+          <p>
+            Chez PowerFit, on s’entraide, on se motive et on progresse ensemble
+            💪.
+          </p>
+        </div>
+        <div class="value-card">
+          <img
+            src="images/iconbien.png"
+            alt="Icône bien etre"
+            class="value-icon"
+          />
+
+          <h3>Bien-être</h3>
+          <p>
+            Le sport, c’est avant tout un moment pour soi, pour respirer et se
+            sentir bien.
+          </p>
+        </div>
+        <div class="value-card">
+          <img
+            src="images/musculation.png"
+            alt="Icône musculation"
+            class="value-icon"
+          />
+
+          <h3>Performance</h3>
+          <p>
+            Peu importe ton niveau, notre objectif c’est ta progression
+            constante 🏋️‍♀️.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- histoire de la marque  -->
+    <section class="about-story">
+      <div class="story-container">
+        <div class="story-text" data-aos="fade-right">
+          <h2 class="black large">Notre histoire</h2>
+          <p>
+            PowerFit est née d’un rêve simple : rendre le sport accessible,
+            intense et inspirant.<br />
+            À nos débuts, nous n’avions qu’un garage et quelques haltères.<br />
+            Aujourd’hui, nous avons bâti une véritable communauté de
+            passionnés.<br />
+            Notre mission ? Te pousser à dépasser tes limites tout en respectant
+            ton corps et ton rythme.<br />
+          </p>
+          <p>
+            PowerFit, c’est plus qu’une salle — c’est une mentalité, une flamme
+            qui te fait avancer.<br />
+            Ici, chaque goutte de sueur raconte une victoire personnelle. 🔥
+          </p>
+          <a href="#contact" class="btn cta btn-large">Rejoins le mouvement</a>
+        </div>
+
+        <div class="story-media" data-aos="fade-left">
+          <video
+            src="video/boxeur.mp4"
+            autoplay
+            muted
+            loop
+            class="story-video"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerie photos -->
+    <section class="about-gallery">
+      <h2 class="black large">Notre salle</h2>
+      <div class="gallery">
+        <img src="images/salle de sport 4.jpg" alt="Salle PowerFit" />
+        <img src="images/salle de sport 2.jpg" alt="Espace muscu" />
+        <img src="images/salle de sport 3.jpg" alt="Cours collectifs" />
+      </div>
+    </section>
+
+    <!--Localisation -->
+    <section class="about-location">
+      <h2 class="black large">Notre emplacement</h2>
+      <p class="bio">
+        Notre salle PowerFit se situe au cœur de Paris, dans un quartier
+        dynamique et accessible à tous. Que tu viennes en métro, à vélo ou en
+        baskets, tu trouveras toujours ton énergie ici. Un lieu pensé pour
+        transpirer, rire et se dépasser ensemble 💥
+      </p>
+      <div class="map-photo">
+        <img src="images/carte.jpg" alt="Emplacement PowerFit sur la carte" />
+      </div>
+    </section>
+
+    <!-- Avis des sportifs -->
+    <section class="reviews">
+      <h2 class="black large">Ils nous font confiance</h2>
+
+      <div class="carousel">
+        <article class="review-card" role="article">
+          <div class="review-header">
+            <div class="review-name">Julie D.</div>
+            <div class="review-rating">
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <p class="review-text">
+            "Super salle — coachs motivants et matériel au top. J'ai rapidement
+            vu des résultats et l'ambiance est vraiment conviviale."
+          </p>
+
+          <div class="review-meta">Membre depuis 2024</div>
+        </article>
+
+        <article class="review-card" role="article">
+          <div class="review-header">
+            <div class="review-name">Julie D.</div>
+            <div class="review-rating">
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <p class="review-text">
+            "Super salle — coachs motivants et matériel au top. J'ai rapidement
+            vu des résultats et l'ambiance est vraiment conviviale."
+          </p>
+
+          <div class="review-meta">Membre depuis 2024</div>
+        </article>
+
+        <article class="review-card" role="article">
+          <div class="review-header">
+            <div class="review-name">Julie D.</div>
+            <div class="review-rating">
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <p class="review-text">
+            "Super salle — coachs motivants et matériel au top. J'ai rapidement
+            vu des résultats et l'ambiance est vraiment conviviale."
+          </p>
+
+          <div class="review-meta">Membre depuis 2024</div>
+        </article>
+
+        <article class="review-card" role="article">
+          <div class="review-header">
+            <div class="review-name">Julie D.</div>
+            <div class="review-rating">
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+              <svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.172L12 18.896l-7.336 3.86 1.402-8.172L.132 9.21l8.2-1.192z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <p class="review-text">
+            "Super salle — coachs motivants et matériel au top. J'ai rapidement
+            vu des résultats et l'ambiance est vraiment conviviale."
+          </p>
+
+          <div class="review-meta">Membre depuis 2024</div>
+        </article>
+      </div>
+    </section>
+
+    <!--FAQ -->
+    <section class="faq">
+      <h2 class="black large">FAQ</h2>
+      <details>
+        <summary>Quels sont les horaires d’ouverture ?</summary>
+        <p>Nous sommes ouverts 7j/7, de 6h à 23h.</p>
+      </details>
+      <details>
+        <summary>Faut-il être abonné pour venir ?</summary>
+        <p>Non, nous proposons aussi des pass journaliers !</p>
+      </details>
+      <details>
+        <summary>Proposez-vous un coaching personnalisé ?</summary>
+        <p>Oui, nos coachs sont disponibles sur rendez-vous.</p>
+      </details>
+    </section>
+
+    <!--Infos pratiques -->
+    <section class="info">
+      <h2 class="black large">Infos pratiques</h2>
+      <p><strong>Adresse :</strong> 25 rue du Sport, 75015 Paris</p>
+      <p><strong>Email :</strong> contact@powerfit.fr</p>
+      <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-nav">
+          <a href="index.html#top" class="footer-logo-link">
+            <img
+              src="images/logo.png"
+              alt="Logo Power Fit"
+              class="footer-logo"
+            />
+          </a>
+
+          <ul class="footer-links">
+            <li><a href="team.html">Coachs</a></li>
+            <li><a href="activities.html">Programmes</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="footer-social">
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/instagram.png"
+                alt="Instagram"
+                class="social-icon"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/fb.png"
+                alt="Facebook"
+                class="social-icon"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/linkedin.png"
+                alt="LinkedIn"
+                class="social-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal-bottom">
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li>
+            <a href="conditions.html">Conditions générales d'utilisation</a>
+          </li>
+        </ul>
+        <div>&copy; 2025 Power Fit</div>
+      </div>
+    </footer>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
 </html>

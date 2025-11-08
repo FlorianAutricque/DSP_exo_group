@@ -1,12 +1,14 @@
 /* HERO SECTION */
 .hero-section {
-  background-color: #383535;
-  color: #fafbf8;
+  background-color: var(--gris);
+  color: var(--blanc);
   background-image: url("../images/homepage/heroV2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: -96px;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .container-inside-hero {
@@ -37,8 +39,8 @@
 
 /* COACHS */
 .coachs {
-  background-color: #383535;
-  color: #1a0d07;
+  background-color: var(--gris);
+  color: var(--noir);
   padding: 24px 50px;
   text-align: center;
 }
@@ -51,12 +53,12 @@
 }
 
 .coach-card {
-  background-color: #fafbf8;
+  background-color: var(--blanc);
   border-radius: 20px;
   padding: 4px;
   width: 250px;
   text-decoration: none;
-  color: #1a0d07;
+  color: var(--noir);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -122,11 +124,11 @@
 
 /* PROGRAMMES */
 .programmes {
-  background-color: #383535;
-  color: #1a0d07;
+  background-color: var(--gris);
+  color: var(--noir);
   padding: 24px 50px;
   text-align: center;
-  margin-top: 0 !important;
+  margin-top: 6rem;
 }
 
 .programmes-container {
@@ -137,13 +139,12 @@
 }
 
 .programme-card {
-  background-color: #fafbf8;
+  background-color: var(--blanc);
   border-radius: 20px;
   padding: 30px;
   width: 300px;
   text-decoration: none;
-  color: #1a0d07;
-
+  color: var(--noir);
   transition: transform 0.3s;
 }
 
@@ -155,7 +156,7 @@
 .reviews-section {
   padding: 40px 5%;
   background: transparent;
-  color: #fafbf8;
+  color: var(--blanc);
   margin-bottom: 2rem;
   max-width: 1300px;
   margin: auto;
@@ -169,11 +170,11 @@
 }
 
 .review-card {
-  background: #383535;
+  background: var(--gris);
   padding: 20px;
   border-radius: 24px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-  color: #fafbf8;
+  color: var(--blanc);
 }
 
 .review-header {
@@ -196,7 +197,7 @@
 .star {
   width: 18px;
   height: 18px;
-  fill: #fa3419;
+  fill: var(--orange);
   display: inline-block;
 }
 
@@ -218,7 +219,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 24px 60px;
-  background-color: #fafbf8;
+  background-color: var(--blanc);
   gap: 40px;
 }
 
@@ -227,7 +228,7 @@
   font-size: 100px;
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 2px #fa3419;
+  -webkit-text-stroke: 2px var(--orange);
   text-transform: uppercase;
   line-height: 1;
 }
@@ -243,7 +244,6 @@
   border-radius: 25px;
   width: 320px;
   height: 420px;
-
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -260,7 +260,7 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: #fafbf8;
+  color: var(--blanc);
 }
 
 .club-overlay h3 {
@@ -278,6 +278,62 @@
 }
 
 /* RESPONSIVE */
+
+/* HERO SECTION */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding-top: 4rem;
+  }
+
+  .container-inside-hero {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-section img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .container-btn {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-inside-hero {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.5em, 6vw, 2.5em);
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container-btn {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+}
 
 /* BENTO */
 @media (max-width: 900px) {
@@ -319,5 +375,61 @@
 @media (max-width: 600px) {
   .reviews-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* NOS CLUBS */
+
+@media (max-width: 1024px) {
+  .notre-club {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 30px;
+  }
+
+  .notre-club-text h2 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .notre-club-images {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .club-image {
+    width: 280px;
+    height: 360px;
+  }
+
+  .club-overlay h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .notre-club {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .notre-club-text h2 {
+    font-size: 40px;
+  }
+
+  .notre-club-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .club-image {
+    width: 90%;
+    height: 250px;
+  }
+
+  .club-overlay h3 {
+    font-size: 20px;
   }
 }

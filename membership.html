@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/tarifs.css" />
+    <link rel="stylesheet" href="styles/membership.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,11 +22,18 @@
           <img src="images/logo.png" alt="Logo Power Fit" />
         </a>
 
-        <ul>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="team.html">Coachs</a></li>
           <li><a href="activities.html">Programmes</a></li>
           <li><a href="about.html">À propos</a></li>
-          <li><a href="menbership.html" class="active">Abonnements</a></li>
+          <li><a href="membership.html" class="active">Abonnements</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -384,5 +391,15 @@
         <div>&copy; 2025 Power Fit</div>
       </div>
     </footer>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
   </body>
 </html>

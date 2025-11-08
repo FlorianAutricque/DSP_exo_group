@@ -22,11 +22,18 @@
           <img src="images/logo.png" alt="Logo Power Fit" />
         </a>
 
-        <ul>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="team.html">Coachs</a></li>
           <li><a href="activities.html">Programmes</a></li>
           <li><a href="about.html">À propos</a></li>
-          <li><a href="menbership.html">Abonnements</a></li>
+          <li><a href="membership.html">Abonnements</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -46,9 +53,6 @@
             <a href="tarifs.html" class="btn cta">Nos abonnements</a>
           </div>
         </div>
-        <!-- <div>
-          <img src="images/homepage/hero-v1.png" alt="Image bannière" />
-        </div> -->
       </div>
     </section>
 
@@ -351,5 +355,15 @@
         <div>&copy; 2025 Power Fit</div>
       </div>
     </footer>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
   </body>
 </html>

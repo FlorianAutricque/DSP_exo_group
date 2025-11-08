@@ -1,0 +1,310 @@
+/* ============================= */
+/* BANNIÈRE MOTIVANTE */
+/* ============================= */
+.about-banner {
+  background: linear-gradient(rgba(26, 13, 7, 0.8), rgba(26, 13, 7, 0.8)),
+    url("../images/banniere.png.jpg") center/cover no-repeat;
+  color: var(--blanc);
+  text-align: center;
+  padding: 120px 30px;
+  position: relative;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+  margin-top: -96px;
+}
+
+/* Animation douce pour le texte */
+/* @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* ============================= */
+/* 💫 STORYTELLING SECTION */
+/* ============================= */
+.about-story {
+  background-color: var(--gris);
+  color: var(--blanc);
+  padding: 24px 10%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ---- Texte ---- */
+.story-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.story-text p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.story-text h2 {
+  font-family: "Hagrid", sans-serif;
+  font-size: 2.2rem;
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+
+/* ---- Image / Vidéo ---- */
+.story-media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.story-video {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.story-video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(250, 52, 25, 0.3);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .story-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .story-text,
+  .story-media {
+    max-width: 100%;
+  }
+  .story-img,
+  .story-video {
+    max-width: 90%;
+  }
+}
+
+/* ============================= */
+/*  CARTES DE VALEURS */
+/* ============================= */
+.values-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ============================= */
+/*  ICONES PERSONNALISÉES */
+/* ============================= */
+.value-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background-color: var(--fond);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.value-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================= */
+/*  GALERIE */
+/* ============================= */
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* ============================= */
+/* LOCALISATION */
+/* ============================= */
+.about-location {
+  background-color: var(--blanc);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-location .bio {
+  font-size: 1.1rem;
+  color: var(--gris);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.map-photo img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================= */
+/* AVIS DES SPORTIFS */
+/* ============================= */
+.reviews {
+  background-color: var(--blanc);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+/* Cache la barre de scroll sur certains navigateurs */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 280px;
+  background-color: white;
+  border-radius: 20px;
+
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* AVIS SECTION */
+.reviews-section {
+  padding: 40px 5%;
+  background: transparent;
+  color: #fafbf8;
+  margin-bottom: 2rem;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* utilisation du grid ici avec un responsif en fonction de la taille d'écran, utilisation du grid plutot que wrap pour aussi faire echo avec le cours */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.review-card {
+  background: #383535;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  color: #fafbf8;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.review-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.review-rating {
+  display: flex;
+  gap: 6px;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  fill: #fa3419;
+  display: inline-block;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  color: #f2f2f2;
+}
+
+.review-meta {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================= */
+/* FAQ */
+/* ============================= */
+details {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ============================= */
+/*  INFOS PRATIQUES */
+/* ============================= */
+.info p {
+  max-width: 600px;
+  margin: auto;
+}
+
+.info {
+  margin-bottom: 4rem;
+}
