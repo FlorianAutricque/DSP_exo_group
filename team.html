@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/team.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,5 +15,166 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>Power Fit - l'équipe</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo Power Fit" />
+        </a>
+
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="team.html" class="active">Coachs</a></li>
+          <li><a href="activities.html">Programmes</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="membership.html">Abonnements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Here is the hero section of page Equipe -->
+      <div class="dark-background">
+        <div class="banniere">
+          <h1>Boostez votre forme avec nos coachs</h1>
+        </div>
+      </div>
+      <!-- Couaches 1 informations and picture-->
+      <section class="pad">
+        <div class="container">
+          <div class="element element1">
+            <h3 class="h3-team">
+              David<br /><span class="semi-bold">Musculation et Force</span>
+            </h3>
+            <p class="text-black">
+              David est notre expert en musculation et en renforcement
+              musculaire. Passionné par la performance physique, il accompagne
+              chacun vers ses objectifs, qu’il s’agisse de prendre du muscle, de
+              gagner en puissance ou simplement de se sentir plus fort au
+              quotidien.
+            </p>
+          </div>
+          <div class="element element3">
+            <img src="images/team/David.jpg" class="img-couches" alt="David" />
+          </div>
+        </div>
+      </section>
+      <!-- Couaches 2 informations and picture-->
+      <section class="dark-background pad">
+        <div class="container">
+          <div class="element element1">
+            <img src="images/team/Laura.jpg" class="img-couches" alt="Laura" />
+          </div>
+          <div class="element element2">
+            <h3 class="h3-team">
+              Laura<br /><span class="semi-bold-white">Yoga & Bien-être</span>
+            </h3>
+            <p>
+              Laura est notre coach spécialisée en yoga. Grâce à son approche
+              douce et équilibrée, elle aide chacun à retrouver harmonie,
+              souplesse et sérénité. Que vous soyez débutant ou pratiquant
+              confirmé, ses séances sont conçues pour apaiser le corps, calmer
+              l’esprit et renforcer la vitalité au quotidien.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Couaches 3 informations and picture-->
+
+      <section class="pad">
+        <div class="container">
+          <div class="element element1">
+            <h3 class="h3-team">
+              Jason<br /><span class="semi-bold">Cardio & <br>Endurance</span>
+            </h3>
+            <p class="text-black">
+              Jason est notre coach expert en cardio et endurance. Il aide ses
+              clients à améliorer leur forme, renforcer leur cœur et booster
+              leurs performances. Que vous prépariez un marathon ou souhaitiez
+              simplement augmenter votre énergie, ses programmes personnalisés
+              vous aideront à dépasser vos limites et obtenir des résultats
+              durables.
+            </p>
+          </div>
+          <div class="element element2">
+            <img src="images/team/Jason.jpg" class="img-couches" alt="Jason" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-nav">
+          <a href="index.html#top" class="footer-logo-link">
+            <img
+              src="images/logo.png"
+              alt="Logo Power Fit"
+              class="footer-logo"
+            />
+          </a>
+
+          <ul class="footer-links">
+            <li><a href="team.html">Coachs</a></li>
+            <li><a href="activities.html">Programmes</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="footer-social">
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/instagram.png"
+                alt="Instagram"
+                class="social-icon"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/fb.png"
+                alt="Facebook"
+                class="social-icon"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/linkedin.png"
+                alt="LinkedIn"
+                class="social-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal-bottom">
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li>
+            <a href="conditions.html">Conditions générales d'utilisation</a>
+          </li>
+        </ul>
+        <div>&copy; 2025 Power Fit</div>
+      </div>
+    </footer>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
 </html>
