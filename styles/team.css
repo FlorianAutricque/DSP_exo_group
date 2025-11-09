@@ -13,7 +13,7 @@
 .banniere {
   position: relative;
 
-  background-image: url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?_gl=1*fv0sh5*_ga*MzQ3MzY1MDgyLjE3NjEyMjkyOTY.*_ga_8JE65Q40S6*czE3NjI1MjM2ODckbzMkZzEkdDE3NjI1MjQwNTYkajU4JGwwJGgw");
+  background: linear-gradient(rgba(26, 13, 7, 0.11), rgba(26, 13, 7, 0.8)), url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?_gl=1*fv0sh5*_ga*MzQ3MzY1MDgyLjE3NjEyMjkyOTY.*_ga_8JE65Q40S6*czE3NjI1MjM2ODckbzMkZzEkdDE3NjI1MjQwNTYkajU4JGwwJGgw");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

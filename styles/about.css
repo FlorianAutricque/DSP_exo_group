@@ -2,7 +2,7 @@
 /* BANNIÈRE MOTIVANTE */
 /* ============================= */
 .about-banner {
-  background: linear-gradient(rgba(26, 13, 7, 0.8), rgba(26, 13, 7, 0.8)),
+  background: linear-gradient(rgba(26, 13, 7, 0.11), rgba(26, 13, 7, 0.8)),
     url("../images/about/banniere.png.jpg") center/cover no-repeat;
   color: var(--blanc);
   text-align: center;

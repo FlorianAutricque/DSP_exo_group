@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/programmes.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Power Fit - Activités et cours</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo Power Fit" />
+        </a>
+
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="team.html">Coachs</a></li>
+          <li><a href="programmes.html" class="active">Programmes</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="membership.html">Abonnements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>Nos horaires et séances</h1>
+          <h2 class="white">
+            <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h2>
+        </div>
+      </section>
+
+      <!-- TABLEAU DES HORAIRES -->
+      <section class="section-tableau">
+        <h2 class="white large">Horaires de la salle</h2>
+        <div class="tableau-responsive">
+          <table>
+            <tr>
+              <th>Jour de la semaine</th>
+              <th>Horaire</th>
+              <th>Catégorie</th>
+              <th>Cours/Activité</th>
+              <th>Durée de la séance</th>
+              <th>Coach</th>
+            </tr>
+
+            <tr>
+              <td>Lundi</td>
+              <td>7h15 – 8h30 <br />14h15 – 15h00 <br />16h00 – 16h45</td>
+              <td>Force & Muscu</td>
+              <td>Cross Training <br />HIIT <br />Renforcement musculaire</td>
+              <td>45 min</td>
+              <td>David Petit</td>
+            </tr>
+
+            <tr>
+              <td>Mardi</td>
+              <td>7h15 – 8h30 <br />14h15 – 15h00 <br />16h00 – 16h45</td>
+              <td>Cardio & Endurance</td>
+              <td>Vélo allongé <br />Rameur <br />Endurance</td>
+              <td>45 min</td>
+              <td>Jason Ba</td>
+            </tr>
+
+            <tr>
+              <td>Mercredi</td>
+              <td>7h15 – 8h30 <br />13h15 – 14h00 <br />18h00 – 18h45</td>
+              <td>Yoga & Mobilité</td>
+              <td>Yoga Dynamique <br />Indoor Cycling <br />Boxe Fitness</td>
+              <td>45 min</td>
+              <td>Laura Duvalier</td>
+            </tr>
+
+            <tr>
+              <td>Jeudi</td>
+              <td>7h15 – 8h30 <br />13h15 – 14h00 <br />18h00 – 18h45</td>
+              <td>Force & Muscu</td>
+              <td>Boxing <br />Cardio <br />Bik'ing</td>
+              <td>45 min</td>
+              <td>David Petit</td>
+            </tr>
+
+            <tr>
+              <td>Vendredi</td>
+              <td>7h15 – 8h30 <br />13h15 – 14h00 <br />18h00 – 18h45</td>
+              <td>Yoga & Mobilité</td>
+              <td>
+                BodyBalance <br />Respiration / Breathwork <br />Méditation
+                guidée
+              </td>
+              <td>45 min</td>
+              <td>Laura Duvalier</td>
+            </tr>
+
+            <tr>
+              <td>Samedi</td>
+              <td>7h15 – 8h30 <br />13h15 – 14h00 <br />18h00 – 18h45</td>
+              <td>Cardio & Endurance</td>
+              <td>
+                Bootcamp <br />Tapis de course <br />Jump Fit (mini trampoline)
+              </td>
+              <td>45 min</td>
+              <td>Jason Ba</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- FORMULAIRE D'INSCRIPTION -->
+      <section class="section-inscription">
+        <h2 class="black large">Réserver ma séance de sport</h2>
+        <form>
+          <div class="name-field">
+            <h4>INSCRIPTION</h4>
+
+            <div>
+              <label>Nom</label>
+              <input type="text" required />
+            </div>
+
+            <div>
+              <label>Votre prénom</label>
+              <input type="text" required />
+            </div>
+
+            <div>
+              <label>Adresse mail</label>
+              <input type="email" required />
+            </div>
+
+            <div>
+              <label>Numéro de téléphone</label>
+              <input type="tel" required />
+            </div>
+
+            <div>
+              <p>
+                <label for="type-seance">Type de séance</label><br />
+                <select name="type-seance" id="type-seance">
+                  <option value="">Sélectionner</option>
+                  <option>Force & Muscu</option>
+                  <option>Cardio & Énergie</option>
+                  <option>Bien-être & Mobilité</option>
+                </select>
+              </p>
+
+              <p>
+                <label for="cours">Je m’inscris à</label><br />
+                <select name="cours" id="cours">
+                  <option value="">Sélectionner</option>
+                  <option>Cross Training</option>
+                  <option>Renforcement musculaire</option>
+                  <option>Boxing</option>
+                  <option>Cardio</option>
+                  <option>Bi'king</option>
+                  <option>Vélo allongé</option>
+                  <option>Rameur</option>
+                  <option>Bootcamp</option>
+                  <option>Tapis de course</option>
+                  <option>Jump Fit</option>
+                  <option>Yoga Dynamique</option>
+                  <option>Indoor Cycling</option>
+                  <option>Boxe Fitness</option>
+                  <option>BodyBalance</option>
+                  <option>Respiration / Breathwork</option>
+                  <option>Méditation guidée</option>
+                </select>
+              </p>
+            </div>
+
+            <div>
+              <button type="submit" value="Réserver" class="cta">
+                Réserver
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-nav">
+          <a href="index.html#top" class="footer-logo-link">
+            <img
+              src="images/logo.png"
+              alt="Logo Power Fit"
+              class="footer-logo"
+            />
+          </a>
+
+          <ul class="footer-links">
+            <li><a href="team.html">Coachs</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="membership.html">Abonnements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="footer-social">
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/instagram.png"
+                alt="Instagram"
+                class="social-icon"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/fb.png"
+                alt="Facebook"
+                class="social-icon"
+              />
+            </a>
+            <a href="#" target="_blank">
+              <img
+                src="images/icons/linkedin.png"
+                alt="LinkedIn"
+                class="social-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal-bottom">
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li>
+            <a href="conditions.html">Conditions générales d'utilisation</a>
+          </li>
+        </ul>
+        <div>&copy; 2025 Power Fit</div>
+      </div>
+    </footer>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>
